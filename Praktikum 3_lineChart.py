@@ -22,9 +22,8 @@ option = st.sidebar.selectbox(
     )
 )
 
-# -----------------------------------------------------------
+
 # Fungsi 1: Line Plot sederhana
-# -----------------------------------------------------------
 def line_plot():
     fig, ax = plt.subplots()
     ax.plot(months, product_A_sales)
@@ -33,9 +32,8 @@ def line_plot():
     ax.set_ylabel('Jumlah Penjualan')
     st.pyplot(fig)
 
-# -----------------------------------------------------------
+
 # Fungsi 2: Kustomisasi Line Plot
-# -----------------------------------------------------------
 def customize_line_plot():
     fig, ax = plt.subplots()
     ax.plot(months, product_A_sales, label='Product A',
@@ -49,9 +47,8 @@ def customize_line_plot():
     ax.grid(True)
     st.pyplot(fig)
 
-# -----------------------------------------------------------
+
 # Fungsi 3: Trend Line berbeda
-# -----------------------------------------------------------
 def trend_lines_plot():
     fig, ax = plt.subplots()
     ax.plot(months, product_A_sales, label='Product A Trend',
@@ -65,9 +62,8 @@ def trend_lines_plot():
     ax.grid(True)
     st.pyplot(fig)
 
-# -----------------------------------------------------------
+
 # Fungsi 4: Subplot
-# -----------------------------------------------------------
 def subplots():
     fig, axs = plt.subplots(2, 1, figsize=(10, 8))
 
@@ -101,4 +97,5 @@ elif option == "Garis Berbeda untuk Menunjukkan Trend":
     trend_lines_plot()
 elif option == "Subplot":
     subplots()
+
 
