@@ -101,3 +101,4 @@ elif option == "Garis Berbeda untuk Menunjukkan Trend":
     trend_lines_plot()
 elif option == "Subplot":
     subplots()
+
